@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\ENG02\\Snowman\\Source\\Snowman\\Snowman.Build.cs",
+		"D:\\ENG02\\Snowman\\Source\\Snowman.Target.cs",
+		"D:\\ENG02\\Snowman\\Source\\SnowmanEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

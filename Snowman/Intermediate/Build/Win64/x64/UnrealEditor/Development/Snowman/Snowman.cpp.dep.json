@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\eng02\\snowman\\source\\snowman\\snowman.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\eng02\\snowman\\intermediate\\build\\win64\\x64\\snowmaneditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\eng02\\snowman\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\snowman\\definitions.snowman.h",
+            "d:\\eng02\\snowman\\source\\snowman\\snowman.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

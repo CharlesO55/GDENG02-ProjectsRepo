@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\eng02\\snowman\\intermediate\\build\\win64\\unrealeditor\\inc\\snowman\\uht\\playerswitcher.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\eng02\\snowman\\intermediate\\build\\win64\\x64\\snowmaneditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\eng02\\snowman\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\snowman\\definitions.snowman.h",
+            "d:\\eng02\\snowman\\source\\snowman\\player\\playerswitcher.h",
+            "d:\\program files\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\camera\\cameraactor.h",
+            "d:\\program files\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\cameraactor.generated.h",
+            "d:\\eng02\\snowman\\intermediate\\build\\win64\\unrealeditor\\inc\\snowman\\uht\\playerswitcher.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
