@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\eng02\\newtest\\intermediate\\build\\win64\\unrealeditor\\inc\\newtest\\uht\\myactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\eng02\\newtest\\intermediate\\build\\win64\\x64\\newtesteditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\eng02\\newtest\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\newtest\\definitions.newtest.h",
+            "d:\\eng02\\newtest\\source\\newtest\\myactor.h",
+            "d:\\eng02\\newtest\\intermediate\\build\\win64\\unrealeditor\\inc\\newtest\\uht\\myactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

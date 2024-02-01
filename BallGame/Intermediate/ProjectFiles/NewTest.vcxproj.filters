@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\NewTest.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\NewTest.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\NewTestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\UpgradeLog.htm" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\NewTest">
+      <UniqueIdentifier>{F9D7569C-4A02-3E8A-BAE4-1E322C598474}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NewTest\MyActor.cpp">
+      <Filter>Source\NewTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NewTest\MyActor.h">
+      <Filter>Source\NewTest</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\NewTest\NewTest.Build.cs">
+      <Filter>Source\NewTest</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\NewTest\NewTest.cpp">
+      <Filter>Source\NewTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NewTest\NewTest.h">
+      <Filter>Source\NewTest</Filter>
+    </ClInclude>
+    <Filter Include="Source\NewTest\Game">
+      <UniqueIdentifier>{14584473-A140-3099-B91E-BCEE18536A75}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NewTest\Game\BallGameModeBase.cpp">
+      <Filter>Source\NewTest\Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NewTest\Game\BallGameModeBase.h">
+      <Filter>Source\NewTest\Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NewTest\Game\PlayerTest.cpp">
+      <Filter>Source\NewTest\Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NewTest\Game\PlayerTest.h">
+      <Filter>Source\NewTest\Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NewTest\Game\ScoreUserWidget.cpp">
+      <Filter>Source\NewTest\Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NewTest\Game\ScoreUserWidget.h">
+      <Filter>Source\NewTest\Game</Filter>
+    </ClInclude>
+    <Filter Include="Source\NewTest\Items">
+      <UniqueIdentifier>{A95F48B7-E4EE-3007-A1D5-3C9F3CFAB9F9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NewTest\Items\ItemBase.cpp">
+      <Filter>Source\NewTest\Items</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NewTest\Items\ItemBase.h">
+      <Filter>Source\NewTest\Items</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
