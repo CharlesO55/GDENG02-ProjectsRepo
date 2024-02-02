@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\unrealeditor\\inc\\coinpusher\\uht\\coinmanager.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\x64\\coinpushereditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\coinpusher\\definitions.coinpusher.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\source\\coinpusher\\coinmanager.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\unrealeditor\\inc\\coinpusher\\uht\\coinmanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

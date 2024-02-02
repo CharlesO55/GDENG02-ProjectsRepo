@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/ENG02/GDENG02-ProjectsRepo/03-CoinPusher/CoinPusher/Content/BaseMap.umap",
+				"D:/ENG02/GDENG02-ProjectsRepo/03-CoinPusher/CoinPusher/Content/BaseMap_BuiltData.uasset",
+				"D:/ENG02/GDENG02-ProjectsRepo/03-CoinPusher/CoinPusher/Content/Materials/Gold.uasset",
+				"D:/ENG02/GDENG02-ProjectsRepo/03-CoinPusher/CoinPusher/Content/StaticMesh/CoinMesh.uasset"
+			]
+		}
+	]
+}

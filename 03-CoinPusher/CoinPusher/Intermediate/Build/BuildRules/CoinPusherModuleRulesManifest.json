@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\ENG02\\GDENG02-ProjectsRepo\\03-CoinPusher\\CoinPusher\\Source\\CoinPusher\\CoinPusher.Build.cs",
+		"D:\\ENG02\\GDENG02-ProjectsRepo\\03-CoinPusher\\CoinPusher\\Source\\CoinPusher.Target.cs",
+		"D:\\ENG02\\GDENG02-ProjectsRepo\\03-CoinPusher\\CoinPusher\\Source\\CoinPusherEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}
