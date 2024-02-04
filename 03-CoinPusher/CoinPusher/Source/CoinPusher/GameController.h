@@ -44,6 +44,18 @@ private:
 
 	UPROPERTY(EditAnywhere) ATriggerBox* m_SpawnBox;
 
+	UPROPERTY(EditAnywhere) int m_StartingSpawnAmount = 10;
+
+	//UPROPERTY(EditAnywhere) AHUD* m_HUD;
+	//UPROPERTY(EditAnywhere) AWB_ScoreUI* m_ScoreUI;
+
+
+
+	/*int m_CurrCoins = 0;
+
+public:
+	UFUNCTION(BlueprintCallable) int GetCoins();*/
+
 private:
 	void SpawnCoin();
 	void RandomizePostion(AActor* actor);

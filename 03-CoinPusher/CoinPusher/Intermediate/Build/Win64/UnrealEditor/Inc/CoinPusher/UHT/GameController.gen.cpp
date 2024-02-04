@@ -38,6 +38,10 @@ void EmptyLinkFunctionForGeneratedCodeGameController() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_SpawnBox_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_SpawnBox;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_StartingSpawnAmount_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_m_StartingSpawnAmount;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -75,9 +79,17 @@ void EmptyLinkFunctionForGeneratedCodeGameController() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameController_Statics::NewProp_m_SpawnBox = { "m_SpawnBox", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameController, m_SpawnBox), Z_Construct_UClass_ATriggerBox_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AGameController_Statics::NewProp_m_SpawnBox_MetaData), Z_Construct_UClass_AGameController_Statics::NewProp_m_SpawnBox_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGameController_Statics::NewProp_m_StartingSpawnAmount_MetaData[] = {
+		{ "Category", "GameController" },
+		{ "ModuleRelativePath", "GameController.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AGameController_Statics::NewProp_m_StartingSpawnAmount = { "m_StartingSpawnAmount", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameController, m_StartingSpawnAmount), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AGameController_Statics::NewProp_m_StartingSpawnAmount_MetaData), Z_Construct_UClass_AGameController_Statics::NewProp_m_StartingSpawnAmount_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGameController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameController_Statics::NewProp_m_CoinPool,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameController_Statics::NewProp_m_SpawnBox,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameController_Statics::NewProp_m_StartingSpawnAmount,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGameController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AGameController>::IsAbstract,
@@ -117,9 +129,9 @@ void EmptyLinkFunctionForGeneratedCodeGameController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ENG02_GDENG02_ProjectsRepo_03_CoinPusher_CoinPusher_Source_CoinPusher_GameController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGameController, AGameController::StaticClass, TEXT("AGameController"), &Z_Registration_Info_UClass_AGameController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGameController), 3746107107U) },
+		{ Z_Construct_UClass_AGameController, AGameController::StaticClass, TEXT("AGameController"), &Z_Registration_Info_UClass_AGameController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGameController), 3215850701U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ENG02_GDENG02_ProjectsRepo_03_CoinPusher_CoinPusher_Source_CoinPusher_GameController_h_4137398533(TEXT("/Script/CoinPusher"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ENG02_GDENG02_ProjectsRepo_03_CoinPusher_CoinPusher_Source_CoinPusher_GameController_h_4261674543(TEXT("/Script/CoinPusher"),
 		Z_CompiledInDeferFile_FID_ENG02_GDENG02_ProjectsRepo_03_CoinPusher_CoinPusher_Source_CoinPusher_GameController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ENG02_GDENG02_ProjectsRepo_03_CoinPusher_CoinPusher_Source_CoinPusher_GameController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

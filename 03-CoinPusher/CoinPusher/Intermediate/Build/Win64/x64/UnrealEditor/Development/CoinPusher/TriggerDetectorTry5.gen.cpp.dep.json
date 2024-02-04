@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\unrealeditor\\inc\\coinpusher\\uht\\triggerdetectortry5.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\x64\\coinpushereditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\coinpusher\\definitions.coinpusher.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\source\\coinpusher\\triggerdetectortry5.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\source\\coinpusher\\actorpoolable.h",
+            "d:\\program files\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\staticmeshactor.h",
+            "d:\\program files\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\staticmeshactor.generated.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\unrealeditor\\inc\\coinpusher\\uht\\actorpoolable.generated.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\03-coinpusher\\coinpusher\\intermediate\\build\\win64\\unrealeditor\\inc\\coinpusher\\uht\\triggerdetectortry5.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

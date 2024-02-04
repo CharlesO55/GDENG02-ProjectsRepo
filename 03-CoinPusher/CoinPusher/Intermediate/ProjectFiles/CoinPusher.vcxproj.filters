@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\CoinPusher.unrealvs" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -67,6 +68,18 @@
       <Filter>Source\CoinPusher</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CoinPusher\PoollingComp.h">
+      <Filter>Source\CoinPusher</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CoinPusher\TestTriggerVol.cpp">
+      <Filter>Source\CoinPusher</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CoinPusher\TestTriggerVol.h">
+      <Filter>Source\CoinPusher</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CoinPusher\TriggerDetectorTry5.cpp">
+      <Filter>Source\CoinPusher</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CoinPusher\TriggerDetectorTry5.h">
       <Filter>Source\CoinPusher</Filter>
     </ClInclude>
   </ItemGroup>

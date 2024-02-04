@@ -134,3 +134,8 @@ bool UPoollingComp::HasObjectAvailable(int nRequestAmount)
 	return this->m_AvailableObjects.Num() > 0;
 }
 
+int UPoollingComp::GetRemainingAvailableSize()
+{
+	return this->m_AvailableObjects.Num();
+}
+

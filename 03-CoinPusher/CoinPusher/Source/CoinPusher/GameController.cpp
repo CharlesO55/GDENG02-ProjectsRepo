@@ -18,6 +18,13 @@ void AGameController::BeginPlay()
 	
 
 	this->m_CoinPool = this->GetComponentByClass<UPoollingComp>();
+
+	TArray<AActorPoolable*> spawnedCoins = this->m_CoinPool->RequestPoolableBatch(m_StartingSpawnAmount);
+
+	for (AActorPoolable* coin : spawnedCoins) {
+		this->RandomizePostion(coin);
+	}
+	UE_LOG(LogTemp, Display, TEXT("Started with %d coins"), spawnedCoins.Num());
 }
 
 // Called every frame
@@ -39,6 +46,11 @@ void AGameController::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAxis(MOVE_Y, this, &AGameController::MoveY);
 	PlayerInputComponent->BindAction(SPACE_KEY, IE_Pressed, this, &AGameController::SpawnCoin);
 }
+
+//int AGameController::GetCoins()
+//{
+//	return this->m_CoinPool->GetRemainingAvailableSize();
+//}
 
 void AGameController::SpawnCoin() {
 	UE_LOG(LogTemp, Display, TEXT("Space Confirmed"));

@@ -12,8 +12,11 @@ class COINPUSHER_API ADespawnerTrigger : public ATriggerBox
 	GENERATED_BODY()
 	
 
-private:
+public:
+	ADespawnerTrigger();
+
 	virtual void BeginPlay() override;
 	
+private:
 	UFUNCTION() void CheckEnteredObj(AActor* OverlappingActor, AActor* Other);
 };

@@ -33,7 +33,7 @@ public:
 	AActorPoolable* RequestPoolable();
 	TArray<AActorPoolable*> RequestPoolableBatch(int nRequestAmount);
 
-	void ReleasePoolable(AActorPoolable* releaseActor);
+	UFUNCTION(BlueprintCallable) void ReleasePoolable(AActorPoolable* releaseActor);
 	void ReleasePoolableBatch(TArray<AActorPoolable*> releaseActors);
 	void ReleasePoolableBatch(int nAmount);
 
@@ -48,4 +48,7 @@ private:
 
 	TArray<AActorPoolable*> m_AvailableObjects;
 	TArray<AActorPoolable*> m_UsedObjects;
+
+public:
+	UFUNCTION(BlueprintCallable) int GetRemainingAvailableSize();
 };

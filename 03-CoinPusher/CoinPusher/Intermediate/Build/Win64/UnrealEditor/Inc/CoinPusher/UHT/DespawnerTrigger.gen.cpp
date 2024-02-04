@@ -130,7 +130,6 @@ void EmptyLinkFunctionForGeneratedCodeDespawnerTrigger() {}
 	{
 		return ADespawnerTrigger::StaticClass();
 	}
-	ADespawnerTrigger::ADespawnerTrigger(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADespawnerTrigger);
 	ADespawnerTrigger::~ADespawnerTrigger() {}
 	struct Z_CompiledInDeferFile_FID_ENG02_GDENG02_ProjectsRepo_03_CoinPusher_CoinPusher_Source_CoinPusher_DespawnerTrigger_h_Statics

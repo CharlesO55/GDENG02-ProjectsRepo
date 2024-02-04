@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeCoinPusher_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x0D0D12E3,
-				0xCE744D48,
+				0x6C5D65E5,
+				0x389AD2D3,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_CoinPusher.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_CoinPusher.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CoinPusher(Z_Construct_UPackage__Script_CoinPusher, TEXT("/Script/CoinPusher"), Z_Registration_Info_UPackage__Script_CoinPusher, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0D0D12E3, 0xCE744D48));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CoinPusher(Z_Construct_UPackage__Script_CoinPusher, TEXT("/Script/CoinPusher"), Z_Registration_Info_UPackage__Script_CoinPusher, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x6C5D65E5, 0x389AD2D3));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
