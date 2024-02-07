@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/ENG02/GDENG02-ProjectsRepo/Landscaping/Content/TestMap_BuiltData.uasset",
+				"D:/ENG02/GDENG02-ProjectsRepo/Landscaping/Content/TestMap.umap",
+				"D:/ENG02/GDENG02-ProjectsRepo/Landscaping/Content/Imported/WaterPlane/Environment/Materials/M_Rock_Basalt.uasset"
+			]
+		}
+	]
+}
