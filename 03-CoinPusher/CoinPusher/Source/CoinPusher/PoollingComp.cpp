@@ -85,6 +85,8 @@ AActorPoolable* UPoollingComp::RequestPoolable()
 		foundObj->OnActivate();
 		foundObj->SetActorTransform(this->GetOwner()->GetActorTransform());
 
+		this->CoinAmountUpdated.Broadcast(this->GetRemainingAvailableSize());
+
 		return foundObj;
 	}
 	else {

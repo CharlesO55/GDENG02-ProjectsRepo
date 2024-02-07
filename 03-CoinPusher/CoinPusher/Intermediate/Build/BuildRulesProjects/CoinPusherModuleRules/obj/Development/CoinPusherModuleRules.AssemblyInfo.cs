@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoinPusherModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9c16cc8948da89513698e931ac7ad4557f974b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b08d9f02cdda80565eecfd206cf2d07e812752ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoinPusherModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoinPusherModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

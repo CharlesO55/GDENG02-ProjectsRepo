@@ -8,6 +8,8 @@
 #include "ActorPoolable.h"
 #include "PoollingComp.generated.h"
 
+UDELEGATE()
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCoinValueChanged, int, nCurrCoins);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class COINPUSHER_API UPoollingComp : public UActorComponent
@@ -51,4 +53,6 @@ private:
 
 public:
 	UFUNCTION(BlueprintCallable) int GetRemainingAvailableSize();
+
+	UPROPERTY(BlueprintAssignable) FCoinValueChanged CoinAmountUpdated;
 };
