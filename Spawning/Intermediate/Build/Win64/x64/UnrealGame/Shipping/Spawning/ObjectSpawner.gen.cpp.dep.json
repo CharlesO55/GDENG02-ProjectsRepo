@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\eng02\\gdeng02-projectsrepo\\coin-pusher\\spawning\\intermediate\\build\\win64\\unrealgame\\inc\\spawning\\uht\\objectspawner.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\eng02\\gdeng02-projectsrepo\\coin-pusher\\spawning\\intermediate\\build\\win64\\x64\\spawning\\shipping\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\eng02\\gdeng02-projectsrepo\\coin-pusher\\spawning\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\spawning\\definitions.spawning.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\coin-pusher\\spawning\\source\\spawning\\objectspawner.h",
+            "d:\\eng02\\gdeng02-projectsrepo\\coin-pusher\\spawning\\intermediate\\build\\win64\\unrealgame\\inc\\spawning\\uht\\objectspawner.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

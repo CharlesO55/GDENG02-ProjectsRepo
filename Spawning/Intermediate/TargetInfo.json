@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Spawning",
+			"Path": "..\\Source\\Spawning.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SpawningEditor",
+			"Path": "..\\Source\\SpawningEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

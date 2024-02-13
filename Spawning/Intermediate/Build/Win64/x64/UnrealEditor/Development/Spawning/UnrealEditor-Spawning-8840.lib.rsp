@@ -1,0 +1,25 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Spawning-8840.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\SpawningEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\APoolable.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\CoinWidget.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\ObjectPoolController.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\ObjectPooling.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\ObjectSpawner.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\PusherController.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\Spawning.init.gen.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\APoolable.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\CoinWidget.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\ObjectPoolController.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\ObjectPooling.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\ObjectSpawner.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\PusherController.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\Spawning.cpp.obj"
+"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\Default.rc2.res"
+/OUT:"C:\Users\valde\Documents\Unreal Projects\Spawning\Intermediate\Build\Win64\x64\UnrealEditor\Development\Spawning\UnrealEditor-Spawning-8840.lib"

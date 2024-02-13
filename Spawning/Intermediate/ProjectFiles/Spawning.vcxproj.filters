@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Spawning.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Spawning.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SpawningEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.editorconfig" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\UpgradeLog.htm" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Spawning">
+      <UniqueIdentifier>{30F1E95B-6248-3F2C-8EB1-5A83850222F8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Spawning\APoolable.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\APoolable.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Spawning\CoinPusherGame.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\CoinPusherGame.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Spawning\CoinWidget.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\CoinWidget.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Spawning\ObjectPoolController.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\ObjectPoolController.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Spawning\ObjectPooling.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\ObjectPooling.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Spawning\ObjectSpawner.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\ObjectSpawner.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Spawning\PusherController.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\PusherController.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Spawning\Spawning.Build.cs">
+      <Filter>Source\Spawning</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Spawning\Spawning.cpp">
+      <Filter>Source\Spawning</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Spawning\Spawning.h">
+      <Filter>Source\Spawning</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

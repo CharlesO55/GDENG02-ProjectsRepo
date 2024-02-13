@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\ENG02\\GDENG02-ProjectsRepo\\COIN-PUSHER\\Spawning\\Source\\Spawning\\Spawning.Build.cs",
+		"D:\\ENG02\\GDENG02-ProjectsRepo\\COIN-PUSHER\\Spawning\\Source\\Spawning.Target.cs",
+		"D:\\ENG02\\GDENG02-ProjectsRepo\\COIN-PUSHER\\Spawning\\Source\\SpawningEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}
