@@ -1,0 +1,3 @@
+// PCH for Runtime/Engine/Public/EngineSharedPCH.h
+#include "D:/ENG02/GDENG02-ProjectsRepo/Challenge01_Anno/Intermediate/Build/Win64/x64/Challenge01_AnnoEditor/Development/Engine/SharedDefinitions.Engine.Cpp20.h"
+#include "Runtime/Engine/Public/EngineSharedPCH.h"
