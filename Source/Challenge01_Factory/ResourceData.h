@@ -28,8 +28,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	int MaxCapacity = 3;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	int CurCapacity;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	int CurCapacity = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* ResIcon;

@@ -5,9 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
+#include "Components/BoxComponent.h"
 
 #include "ResourceData.h"
 #include "ResourceManager.h"
+
 #include "FactoryBase.generated.h"
 
 UCLASS()
@@ -22,6 +24,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
 	virtual void NotifyActorOnClicked(FKey ButtonPressed = EKeys::LeftMouseButton) override;
 
 
@@ -37,9 +40,6 @@ protected:
 
 
 protected:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FString _FactoryName;
 
@@ -69,4 +69,11 @@ protected:
 
 
 	AResourceManager* _resourceManager;
+
+
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* _collisionBox;
+
+	UFUNCTION()
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

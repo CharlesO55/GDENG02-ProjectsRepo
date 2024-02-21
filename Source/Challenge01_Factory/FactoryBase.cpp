@@ -15,9 +15,22 @@ AFactoryBase::AFactoryBase()
 	this->_emptyIndicator = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Empty Indicator"));
 	this->_fullIndicator = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Full Indicator"));
 	
+	_mesh->SetMobility(EComponentMobility::Static);
+	_emptyIndicator->SetMobility(EComponentMobility::Static);
+	_fullIndicator->SetMobility(EComponentMobility::Static);
+
 	this->_mesh->SetupAttachment(RootComponent);
 	this->_emptyIndicator->SetupAttachment(RootComponent);
 	this->_fullIndicator->SetupAttachment(RootComponent);
+
+
+	this->_collisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Truck Detector"));
+	this->_collisionBox->SetBoxExtent(FVector(75, 75, 75));
+	this->_collisionBox->SetCollisionProfileName("Trigger");
+	this->_collisionBox->SetMobility(EComponentMobility::Static);
+
+	this->_collisionBox->SetupAttachment(RootComponent);
+
 }
 
 // Called when the game starts or when spawned
@@ -25,6 +38,9 @@ void AFactoryBase::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	this->_collisionBox->OnComponentBeginOverlap.AddDynamic(this, &AFactoryBase::OnOverlapBegin);
+
+
 	_isMissingResources = false;
 
 
@@ -102,7 +118,7 @@ void AFactoryBase::ContinueProduction(float DeltaTime)
 
 		//UPDATE INPUT RESOURCES
 		for (FResourceData resUsed : _InputResources) {
-			resUsed.CurCapacity--;
+			resUsed.CurCapacity -= 1;
 
 			if (resUsed.CurCapacity <= 0)
 			{
@@ -120,4 +136,11 @@ void AFactoryBase::ToggleIndicator(UStaticMeshComponent* indicator, bool bEnable
 	if (indicator) {
 		indicator->SetVisibility(bEnable);
 	}
+}
+
+
+void AFactoryBase::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 2, FColor::Red, FString::Printf(TEXT("Collide")));
+
 }
