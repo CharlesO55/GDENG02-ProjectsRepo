@@ -36,18 +36,49 @@ void AFactoryBase::BeginPlay()
 
 	ToggleIndicator(_emptyIndicator, _isMissingResources);
 	ToggleIndicator(_fullIndicator, _isFull);
+
+
+	AActor* FoundActor = UGameplayStatics::GetActorOfClass(GetWorld(),
+		AResourceManager::StaticClass());
+
+	this->_resourceManager = Cast<AResourceManager>(FoundActor);
+	if (_resourceManager == nullptr) {
+		UE_LOG(LogTemp, Error, TEXT("No resource manager found"));
+	}
+	else {
+		_resourceManager->RegisterFactory(this);
+	}
 }
 
+void AFactoryBase::NotifyActorOnClicked(FKey ButtonPressed)
+{
+	Super::NotifyActorOnClicked(ButtonPressed);
+
+	_resourceManager->SelectFactory(this);
+
+	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, this->_FactoryName);
+}
+
+
+FResourceData AFactoryBase::GetProductionOuputResources()
+{
+	return _OuputResources;
+}
 
 void AFactoryBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
+
 	if (_isMissingResources || _isFull) {
 		return;
 	}
 
 	ContinueProduction(DeltaTime);
+}
+
+float AFactoryBase::GetProgressPercentage()
+{
+	return this->_ProductionProgress / this->_ProductionTime;
 }
 
 

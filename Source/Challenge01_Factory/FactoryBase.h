@@ -4,9 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "ResourceData.h"
-
+#include "ResourceManager.h"
 #include "FactoryBase.generated.h"
 
 UCLASS()
@@ -21,9 +22,14 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	virtual void NotifyActorOnClicked(FKey ButtonPressed = EKeys::LeftMouseButton) override;
+
 
 	void ContinueProduction(float DeltaTime);
 	void ToggleIndicator(UStaticMeshComponent* indicator, bool bEnable);
+
+	UFUNCTION(BlueprintCallable)
+	FResourceData GetProductionOuputResources();
 
 protected:
 	bool _isFull = false;
@@ -34,17 +40,19 @@ protected:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FString _FactoryName;
+
 	UPROPERTY(EditAnywhere)
 	float _ProductionTime = 5;
 
 	UPROPERTY(EditAnywhere)
 	float _ProductionProgress;
 
-
-	UPROPERTY(EditAnywhere) 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FResourceData _OuputResources;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TArray<FResourceData> _InputResources;
 
 	UPROPERTY(EditAnywhere, Category="Factory Meshes")
@@ -55,4 +63,10 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Factory Meshes")
 	UStaticMeshComponent* _emptyIndicator;
+
+	UFUNCTION(BlueprintCallable)
+	float GetProgressPercentage();
+
+
+	AResourceManager* _resourceManager;
 };

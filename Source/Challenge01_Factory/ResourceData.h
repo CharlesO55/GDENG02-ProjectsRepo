@@ -22,16 +22,16 @@ struct CHALLENGE01_FACTORY_API FResourceData
 public:
 	GENERATED_BODY()
 	
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	EResource ResourceType;
 
-	UPROPERTY(EditAnywhere)
-	uint32 MaxCapacity = 3;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	int MaxCapacity = 3;
 
-	UPROPERTY(EditAnywhere)
-	uint32 CurCapacity;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	int CurCapacity;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* ResIcon;
 
 	FResourceData();
