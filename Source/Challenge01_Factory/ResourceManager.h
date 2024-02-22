@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 
+//#include "Truck.h"
+
 #include "ResourceManager.generated.h"
 
 class AFactoryBase;
@@ -24,6 +26,7 @@ public:
 	void RegisterFactory(AFactoryBase* factory);
 	void SelectFactory(AFactoryBase* factory);
 
+	//bool CanStartExchange(ATruck* truckEntered, AFactoryBase* factory);
 
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)

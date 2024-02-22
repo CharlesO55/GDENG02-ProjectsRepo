@@ -39,10 +39,12 @@ protected:
 	bool _isMissingResources;
 
 
-protected:	
+public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FString _FactoryName;
 
+public:	
+	
 	UPROPERTY(EditAnywhere)
 	float _ProductionTime = 5;
 
