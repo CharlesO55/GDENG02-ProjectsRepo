@@ -9,7 +9,7 @@ AFactoryBase::AFactoryBase()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+	//RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 
 	this->_mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Factory Mesh"));
 	this->_emptyIndicator = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Empty Indicator"));
@@ -19,7 +19,8 @@ AFactoryBase::AFactoryBase()
 	_emptyIndicator->SetMobility(EComponentMobility::Static);
 	_fullIndicator->SetMobility(EComponentMobility::Static);
 
-	this->_mesh->SetupAttachment(RootComponent);
+	RootComponent = this->_mesh;
+	//this->_mesh->SetupAttachment(RootComponent);
 	this->_emptyIndicator->SetupAttachment(RootComponent);
 	this->_fullIndicator->SetupAttachment(RootComponent);
 
@@ -64,7 +65,14 @@ void AFactoryBase::BeginPlay()
 	else {
 		_resourceManager->RegisterFactory(this);
 	}
+
+	this->SetProductionTime();
 }
+
+void AFactoryBase::SetProductionTime() {
+	
+}
+
 
 void AFactoryBase::NotifyActorOnClicked(FKey ButtonPressed)
 {

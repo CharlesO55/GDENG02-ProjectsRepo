@@ -34,6 +34,8 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	FResourceData GetProductionOuputResources();
 
+	virtual void SetProductionTime();
+
 protected:
 	bool _isFull = false;
 	bool _isMissingResources;
