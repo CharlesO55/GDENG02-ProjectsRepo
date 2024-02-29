@@ -1,7 +1,0 @@
-2024/02/19-22:31:31.267 2ff0 Reusing MANIFEST D:/ENG02/GDENG02-ProjectsRepo/Challenge01_Anno/Saved/webcache_4430\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/02/19-22:31:31.268 2ff0 Recovering log #3
-2024/02/19-22:31:31.275 2ff0 Reusing old log D:/ENG02/GDENG02-ProjectsRepo/Challenge01_Anno/Saved/webcache_4430\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/000003.log 
-2024/02/19-22:33:49.410 2ff0 Level-0 table #5: started
-2024/02/19-22:33:49.532 2ff0 Level-0 table #5: 1167 bytes OK
-2024/02/19-22:33:49.587 2ff0 Delete type=0 #3
-2024/02/19-22:33:49.606 2ff0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
