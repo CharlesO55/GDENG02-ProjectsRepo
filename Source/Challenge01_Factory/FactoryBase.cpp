@@ -45,14 +45,21 @@ void AFactoryBase::BeginPlay()
 	_isMissingResources = false;
 
 
-	for (FResourceData inputRes : _InputResources) {
-		if (inputRes.CurCapacity <= 0)
-			_isMissingResources = true;
+	switch (_InputResources.Num()) {
+	case 1:
+		input0 = 0;
+		break;
+	case 2:
+		input0 = 0;
+		input1 = 0;
+		break;
+	default:
+		input0 = -1;
+		input1 = -1;
 	}
+	CheckMissingResources();
 
-
-	ToggleIndicator(_emptyIndicator, _isMissingResources);
-	ToggleIndicator(_fullIndicator, _isFull);
+	
 
 
 	AActor* FoundActor = UGameplayStatics::GetActorOfClass(GetWorld(),
@@ -71,6 +78,25 @@ void AFactoryBase::BeginPlay()
 
 void AFactoryBase::SetProductionTime() {
 	
+}
+
+void AFactoryBase::CheckMissingResources()
+{
+	/*for (FResourceData inputRes : _InputResources) {
+		if (inputRes.CurCapacity <= 0)
+			_isMissingResources = true;
+	}*/
+	if (input0 == 0 && input1 == 0) {
+		_isMissingResources = true;
+	}
+	else {
+		_isMissingResources = false;
+	}
+	
+
+
+	ToggleIndicator(_emptyIndicator, _isMissingResources);
+	ToggleIndicator(_fullIndicator, _isFull);
 }
 
 
@@ -125,17 +151,15 @@ void AFactoryBase::ContinueProduction(float DeltaTime)
 
 
 		//UPDATE INPUT RESOURCES
-		for (FResourceData resUsed : _InputResources) {
-			resUsed.CurCapacity -= 1;
-
-			if (resUsed.CurCapacity <= 0)
-			{
-				_isMissingResources = true;
-				ToggleIndicator(_emptyIndicator, _isMissingResources);
-			}
+		if (input0 != -1) {
+			input0 -= 1;
 		}
+		if (input1 != -1) {
+			input1 -= 1;
+		}
+		CheckMissingResources();
 
-		UE_LOG(LogTemp, Display, TEXT("Current capacity: %d"), this->_OuputResources.CurCapacity);
+		UE_LOG(LogTemp, Display, TEXT("Current production capacity: %d"), this->_OuputResources.CurCapacity);
 	}
 }
 
@@ -149,11 +173,26 @@ void AFactoryBase::ToggleIndicator(UStaticMeshComponent* indicator, bool bEnable
 
 void AFactoryBase::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	//ATruck* truck = Cast<ATruck>(OtherActor);
+	UResourceModifier* resMod = OtherActor->GetComponentByClass<UResourceModifier>();
 
-	/*if (IsValid(truck)) {
-		GEngine->AddOnScreenDebugMessage(-1, 2, FColor::Red, FString::Printf(TEXT("Truck entered")));
+	UE_LOG(LogTemp, Error, TEXT("Collidde"));
 
-		truck->UpdateResources();
-	}*/
+
+	if (IsValid(resMod)) {
+		UE_LOG(LogTemp, Error, TEXT("Refilled"));
+
+		if (_OuputResources.ResourceType != EResource::SEWING_MACHINE) {
+			_OuputResources.CurCapacity -= 1;
+		}
+
+		if (input0 != -1) {
+			input0 += 1;
+		}
+		if (input1 != -1) {
+			input1 += 1;
+		}
+
+		CheckMissingResources();
+		//}
+	}
 }

@@ -7,7 +7,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 
 #include "ResourceData.h"
-#include "FactoryBase.h"
+#include "ResourceModifier.h"
+//#include "FactoryBase.h"
 
 #include "Truck.generated.h"
 
@@ -32,10 +33,21 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool isIdle = true;
 
 protected:
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* _truckMesh;
+
+	UPROPERTY(EditAnywhere)
+	UResourceModifier* _resModifier;
+
+	UPROPERTY(EditAnywhere)
+	TArray<FVector> _waypoints;
+
+	int curIndex = 0;
 
 public:
 	UPROPERTY(Config, VisibleAnywhere)
@@ -52,9 +64,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	float LoadingTime = 0;
 	
-private:
-	UPROPERTY(VisibleAnywhere)
-	AFactoryBase* _targetFactory;
+//private:
+//	UPROPERTY(VisibleAnywhere)
+//	//AFactoryBase* _targetFactory;
 
 public:
 	UFUNCTION(BlueprintImplementableEvent)
@@ -63,5 +75,5 @@ public:
 public:
 	void UpdateResources();
 
-	bool CheckCargo(AFactoryBase* factory);
+	//bool CheckCargo(AFactoryBase* factory);
 };

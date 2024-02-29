@@ -12,6 +12,9 @@ ATruck::ATruck()
 
 	this->_truckMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Truck Mesh"));
 	this->_truckMesh->SetupAttachment(RootComponent);
+
+	this->_resModifier = CreateDefaultSubobject<UResourceModifier>(TEXT("Resource Holder"));
+	//this->_resModifier->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -36,13 +39,28 @@ void ATruck::BeginPlay()
 		_moveComp->MaxAcceleration = 10000000000000;
 	}
 
-	this->MoveTo(FVector(0, 0, 0));
+
+	_waypoints.Add(FVector(-500, 500, 0));
+	_waypoints.Add(FVector(500, 500, 0));
+	_waypoints.Add(FVector(0, 0, 0));
+	_waypoints.Add(FVector(-500, -500, 0));
+	_waypoints.Add(FVector(500, -500, 0));
+	//this->MoveTo(FVector(0, 0, 0));
 }
 
 // Called every frame
 void ATruck::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (this->isIdle) {
+		this->MoveTo(_waypoints[curIndex]);
+
+		curIndex++;
+		if (curIndex >= _waypoints.Num()) {
+			curIndex = 0;
+		}
+	}
 
 
 	if (LoadingTime != 0 && LoadingProgress < LoadingTime) {
@@ -64,36 +82,36 @@ void ATruck::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ATruck::UpdateResources()
 {
-	if (!IsValid(_targetFactory)) {
+	/*if (!IsValid(_targetFactory)) {
 		return;
-	}
-	//UNLOAD
-	for (FResourceData inputResources : _targetFactory->_InputResources) {
-		for (EResource myCargo : _cargo) {
-			if (myCargo == inputResources.ResourceType && inputResources.CurCapacity < inputResources.MaxCapacity) {
-				_cargo.Remove(myCargo);
-				inputResources.CurCapacity += 1;
-			}
-		}
-	}
+	}*/
+	////UNLOAD
+	//for (FResourceData inputResources : _targetFactory->_InputResources) {
+	//	for (EResource myCargo : _cargo) {
+	//		if (myCargo == inputResources.ResourceType && inputResources.CurCapacity < inputResources.MaxCapacity) {
+	//			_cargo.Remove(myCargo);
+	//			inputResources.CurCapacity += 1;
+	//		}
+	//	}
+	//}
 
 
 	//LOAD
 }
 
-bool ATruck::CheckCargo(AFactoryBase* factory)
-{
-	if (!IsValid(_targetFactory)) {
-		return false;
-	}
-
-
-	if (factory->_FactoryName == this->_targetFactory->_FactoryName){
-		//START TRANSFERING
-		LoadingTime = FMath::RandRange(1, 3);
-
-		return true;
-	}
-
-	return false;
-}
+//bool ATruck::CheckCargo(AFactoryBase* factory)
+//{
+//	if (!IsValid(_targetFactory)) {
+//		return false;
+//	}
+//
+//
+//	if (factory->_FactoryName == this->_targetFactory->_FactoryName){
+//		//START TRANSFERING
+//		LoadingTime = FMath::RandRange(1, 3);
+//
+//		return true;
+//	}
+//
+//	return false;
+//}

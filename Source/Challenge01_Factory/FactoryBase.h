@@ -10,6 +10,8 @@
 #include "ResourceData.h"
 #include "ResourceManager.h"
 
+#include "ResourceModifier.h"
+
 #include "FactoryBase.generated.h"
 
 UCLASS()
@@ -40,10 +42,19 @@ protected:
 	bool _isFull = false;
 	bool _isMissingResources;
 
+protected:
+	void CheckMissingResources();
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FString _FactoryName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	int input0 = -1;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	int input1 = -1;
+
+	
 
 public:	
 	
